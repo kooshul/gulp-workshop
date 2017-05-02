@@ -2,11 +2,6 @@
  * Big shout out to these guys for showing the practical implications
  * https://julienrenaux.fr/2014/05/25/introduction-to-gulp-js-with-practical-examples/
 */
-const browserSync = require('browser-sync');
-const coffeescript = require('gulp-coffeescript');
-const uglify = require('gulp-uglify');
-const sass = require('gulp-sass');
-const cssnano = require('gulp-cssnano');
 
 // Include Gulp
 const gulp = require('gulp');
@@ -14,6 +9,11 @@ const gulp = require('gulp');
 // Include Our Plugins
 const pug = require('gulp-pug');
 const pugLinter = require('gulp-pug-linter');
+const browserSync = require('browser-sync');
+const coffeescript = require('gulp-coffeescript');
+const uglify = require('gulp-uglify');
+const sass = require('gulp-sass');
+const cssnano = require('gulp-cssnano');
 
 // Compile Pug with linter
 gulp.task('compile-pug', () => {
